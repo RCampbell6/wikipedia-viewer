@@ -1,38 +1,100 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-			<title>Wikipedia Viewer</title>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-			<link rel="stylesheet" href="style.css">
+   <title>Wikipedia Viewer</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-			<div id="wrapper" class="container text-center">
-						<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-primary">Random Wiki</a>
-						<div id="wikis" class="container-fluid">
-									<div class="row">
-												<div class="col-md-4">
-															<div class="thumbnail wiki">
-																		<h3>1</h3>
-																		<p></p>
-															</div>
-												</div>
-												<div class="col-md-4">
-															<div class="thumbnail wiki">
-																		2
-															</div>
-												</div>
-												<div class="col-md-4">
-															<div class="thumbnail wiki">
-																		3
-															</div>
-												</div>
-									</div>
-						</div>
-			</div>
-			<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <div id="wrapper" class="container text-center">
+      <div class="row">
+         <div class="col-md-3"></div>
+         <div class="col-md-2">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-primary">Random Wiki</a>
+         </div>
+         <div class="col-md-1"></div>
+         <div class="col-md-3">
+            <form id="wiki-search-form" class="wiki-form">
+               <div id="wiki-search" class="input-group">
+                  <input type="text" class="form-control search-item" placeholder="Search Wikipedia">
+                  <span class="input-group-btn">
+                     <button id="search-button" class="btn btn-default search" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                     </button>
+                  </span>
+               </div>
+            </form>
+         </div>
+         <div class="col-md-3"></div>
+      </div>
+      <div id="wikis" class="container-fluid">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="thumbnail wiki">
+                  <h2>1</h2>
+                  <p></p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="thumbnail wiki">
+                  <h2>2</h2>
+                  <p></p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="thumbnail wiki">
+                  <h2>3</h2>
+                  <p></p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="thumbnail wiki">
+                  <h2>4</h2>
+                  <p></p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="thumbnail wiki">
+                  <h2>5</h2>
+                  <p></p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="thumbnail wiki">
+                  <h2>6</h2>
+                  <p></p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="thumbnail wiki">
+                  <h2>7</h2>
+                  <p></p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="thumbnail wiki">
+                  <h2>8</h2>
+                  <p></p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="thumbnail wiki">
+                  <h2>9</h2>
+                  <p></p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
